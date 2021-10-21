@@ -8,6 +8,10 @@
   transition: all ease-in-out 500ms;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* Nav Styles */
 
 nav {
@@ -189,3 +193,21 @@ main section {
         }
 
       }
+
+
+  /* Footer Styles */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    background-color: #FFF;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer img {
+    width: 30px;
+    margin: 0px 20px;
+  }
