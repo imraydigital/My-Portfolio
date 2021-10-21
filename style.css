@@ -1,5 +1,191 @@
+/* Universal Styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+  transition: all ease-in-out 500ms;
 }
+
+/* Nav Styles */
+
+nav {
+
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+#liam {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #000026;
+}
+
+#imray {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1993cd;
+}
+
+.hello-btn {
+  font-size: 1.5rem;
+  color: #1993cd;
+  border: 2px solid #1993cd;
+  width: 150px;
+  border-radius: 25px;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.hello-btn:hover {
+  background-color: #1993cd;
+  color: #FFF;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+/* Feature Styles */
+
+.feature {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top:0;
+}
+
+.feature-title h1 {
+  font-size: 3rem;
+}
+
+.feature-subtitle h2 {
+  font-weight: 300;
+}
+
+svg {
+  display: block;
+}
+
+/* Main Styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 0;
+  background-color: #000026;
+  width: 100%;
+  height: 100%;
+}
+
+main h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #FFF;
+  padding: 50px;
+}
+
+main p {
+  font-size: 1.25rem;
+  font-weight: 100;
+  color: #FFF;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+main section {
+  padding: 40px;
+}
+
+    /* About Styles */
+    .about-title {
+      text-align: center;
+    }
+
+    .about-body {
+      max-width: 850px;
+    }
+
+    /* Skills Styles */
+
+    .skills * {
+      margin: 5px 0px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 500px;
+        width: 500px;
+        max-width: 800px;
+        background-color: #FFF;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: 40px 0px;
+        padding: 10px;
+    }
+
+    .skills p {
+      font-size: 1rem;
+      color: #000026;
+      max-width: 80%;
+      letter-spacing: normal;
+      text-align: center;
+    }
+
+    .skills h4 {
+      font-weight: 700;
+      letter-spacing: .5px;
+      color: #1993cd;
+    }
+
+    .skills ul {
+      list-style-type: none;
+    }
+
+    .skills li {
+      text-align: center;
+      margin: 0;
+    }
+
+    #codeIcon {
+      width: 40px;
+      margin: 20px;
+    }
+
+    .fluent-skills {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+    .fluent-skills-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+    }
+
+        /* Mobile Responsive Skill */
+
+        @media only screen and (max-width: 575px){
+
+        .skills {
+          width: 80%;
+        }
+
+      }
