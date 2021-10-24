@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>Liam Imray | Full Stack Web Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
     rel="stylesheet">
@@ -18,17 +18,21 @@
       <span id="liam">Liam</span><span id="imray">Imray</span>
     </div>
     <div class="nav-items">
-      <button class="hello-btn">Say Hello</button>
+      <button class="btn hello-btn">Say Hello</button>
     </div>
   </nav>
 
   <!-- Feature Area -->
   <section class="feature">
     <div class="feature-title">
-      <h1>Full-Stack Engineer</h1>
+      <h1 id="typeHeading"></h1><span id="typeCursor">
+        <h1>|</h1>
+      </span>
     </div>
     <div class="feature-subtitle">
-      <h2>I design and develop Full Stack websites - taking a project from an idea to a fully functioning application.
+      <h2 id="featureSubtitle">I design and develop Full Stack Websites and Web Apps - taking a project from an idea to
+        a
+        fully functioning application.
       </h2>
     </div>
   </section>
@@ -71,6 +75,7 @@
             <li>JavaScript</li>
             <li>PHP</li>
             <li>React</li>
+            <li>Express</li>
           </ul>
         </div>
         <div class="fluent-skills-items">
@@ -92,7 +97,13 @@
       <p>Here's a few of my favourite projects. If you'd like to see some more examples of my work, feel free to reach
         out by hitting the "Say Hello" button in the navbar.</p>
       <div class="projects-list">
-        <div class="project"></div>
+        <div class="project" id="project1">
+          <div class="project-details">
+            <p>Personal Trainer website showcasing client results with contact link.</p>
+            <a href="https://liamimrayfitness.com" target="_blank"><button class="btn project-btn">Visit
+                Site</button></a>
+          </div>
+        </div>
         <div class="project"></div>
         <div class="project"></div>
         <div class="project"></div>
@@ -110,8 +121,11 @@
     <img src="./img/react.svg" alt="">
     <img src="./img/php.svg" alt="">
     <img src="./img/github.svg" alt="">
+    <img src="./img/express.svg" alt="">
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="main.js"></script>
 </body>
 
