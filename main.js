@@ -1,5 +1,19 @@
 $(document).ready(() => {
 
+  const fadeAbout = () => {
+    $(".about").fadeIn(2000);
+  }
+
+  const fadeSkills = () => {
+    $(".skills").fadeIn(2000);
+    $(".skills").css("display", "flex");
+  }
+
+  const fadeProjects = () => {
+    $(".projects").fadeIn(2000);
+    $(".projects").css("display", "flex");
+  }
+
 
   const fade = () => {
     $("#featureSubtitle").fadeIn(3000);
@@ -29,6 +43,37 @@ $(document).ready(() => {
       hideTypeCursor();
     }
   }
+
+
+  // Scroll fade About
+  $(document).scroll(() => {
+
+    let scrollTop = $(window).scrollTop();
+    console.log(scrollTop);
+    if (scrollTop >= 64) {
+      fadeAbout();
+    }
+  })
+
+  // Scroll fade Skills
+  $(document).scroll(() => {
+
+    let scrollTop = $(window).scrollTop();
+    console.log(scrollTop);
+    if (scrollTop >= 240) {
+      fadeSkills();
+    }
+  });
+
+  // Scroll fade Projects
+  $(document).scroll(() => {
+
+    let scrollTop = $(window).scrollTop();
+    console.log(scrollTop);
+    if (scrollTop >= 1100) {
+      fadeProjects();
+    }
+  });
 
   fade();
   typeWriter();
