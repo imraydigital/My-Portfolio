@@ -4,8 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   scroll-behavior: smooth;
+  line-height: 2rem;
+  letter-spacing: 1px;
 }
 
 ul {
@@ -29,35 +31,42 @@ nav {
 
 }
 
-#liam {
+.logo span {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
   font-size: 2rem;
-  font-weight: 200;
-  color: #000026;
+  letter-spacing: 0px;
+  color: #111111;
 }
 
-#imray {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #1993cd;
+#logo-dev {
+  color: #F6412A;
+}
+
+#dev {
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .btn {
-  color: #1993cd;
-  border: 2px solid #1993cd;
+  color: #F6412A;
+  border: 2px solid #F6412A;
   width: 150px;
+  padding: 10px;
   border-radius: 25px;
   cursor: pointer;
   transition: all ease-in-out 500ms;
 }
 
 .btn:hover {
-  background-color: #1993cd;
+  background-color: #F6412A;
   color: #FFF;
 }
 
 .hello-btn {
   font-size: 1.5rem;
   background-color: #FFF;
+  
 }
 
 
@@ -78,6 +87,10 @@ nav {
   top:0;
 }
 
+.feature>div {
+  margin: 10px 0px;
+}
+
 .feature-title {
   display: flex;
 }
@@ -95,7 +108,7 @@ nav {
 .feature-subtitle h2 {
   font-weight: 300;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 #featureSubtitle {
@@ -120,7 +133,7 @@ main {
   align-items: center;
   position: relative;
   top: 0;
-  background-color: #000026;
+  background-color: #111111;
   width: 100%;
   height: 100%;
 }
@@ -158,6 +171,7 @@ main section {
 
     .about-body {
       max-width: 850px;
+
     }
 
     /* Skills Styles */
@@ -204,7 +218,7 @@ main section {
     .skills h4 {
       font-weight: 700;
       letter-spacing: .5px;
-      color: #1993cd;
+      color: #F6412A;
     }
 
     .skills ul {
@@ -238,7 +252,7 @@ main section {
   /* Project Styles */
   
   #projectSection {
-    background-color: #1993cd;
+    background-color: #F6412A;
     margin: 0;
     width: 100%;
   }
